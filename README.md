@@ -9,17 +9,20 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: João Pedro Silva Dantas
+- Matricula: 915802
+- Proposta de projeto escolhida: Lugares e experiencias entidade principal: Lugar entidade secundaria: Atividades
+- Breve descrição sobre seu projeto: campo de futebol publico, sem fins lucrativos
 
 ## Print da versão responsiva com CSS puro [DESKTOP]
-
+![alt text](public/pagina.pc1.png)
+![alt text](public/pagina.pc2.png)
 <<  COLOQUE A IMAGEM AQUI >>
 
 ## Print da versão responsiva com CSS puro [MOBILE] (*)
-
+![alt text](public/pagina.celular1.png)
+![alt text](public/pagina.celular2.png)
+![alt text](public/pagina.celular3.png)
 <<  COLOQUE A IMAGEM AQUI >>
 
 
