@@ -1,0 +1,161 @@
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('fundo-campo2.jpg');
+}
+.LOGO{
+    width: 500px;
+    display: inline;
+    
+}
+div header{
+    background-color: rgb(1, 84, 14);
+    color: beige;
+    font-weight: bolder;
+    padding: 5px 20px;
+    margin: 0;
+    padding: 0;
+    position: relative
+}
+.caixa-pesquisa{
+    float: right;
+    padding: 85px 200px;
+    display: inline;
+    position: absolute;
+    
+}
+div aside{
+    float: left;
+    background-color: rgb(1, 84, 14);
+    font-weight: bold;
+    text-align: left;
+    width: 280px;
+    height: 700px;
+    color: beige;
+    font-size: x-large;
+    
+}
+div nav{
+    background-color: yellow;
+}
+div main .titulo{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 650px;
+    margin-right: 400px;
+    color: beige;
+}
+article {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 350px;
+    margin-right: 10px;
+    gap: 20px;
+    color:rgb(1, 84, 14);
+}
+.botao1, .botao2, .botao3 {
+    flex: 1;
+    padding: 20px;
+}
+.botao1{
+    background-color: beige;
+    width: 380px;
+    height: 380px;
+    border-radius: 10%;
+}
+.botao2{
+    background-color: beige;
+    width: 380px;
+    height: 380px;
+    border-radius: 10%;
+}
+.botao3{
+    background-color: beige;
+    width: 380px;
+    height: 380px;
+    border-radius: 10%;
+}
+.icones{
+    width: 200px;
+}
+/* Layout desktop: cards em 3 colunas */
+.cards-horario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 280px; /* espaço do menu lateral */
+}
+
+/* Banner */
+.banner {
+    margin-left: 280px;
+}
+.banner img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+.banner p {
+    color: beige;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Footer */
+.rodape {
+    background-color: rgb(1, 84, 14);
+    color: beige;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+.redes-sociais a {
+    color: beige;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .lado {
+        float: none;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .LOGO {
+        width: 200px;
+    }
+
+    .banner,
+    .cards-horario {
+        margin-left: 0;
+    }
+
+    .cards-horario {
+        grid-template-columns: 1fr; /* uma coluna no mobile */
+    }
+
+    .caixa-pesquisa {
+        position: static;
+        float: none;
+        padding: 10px;
+        text-align: center;
+    }
+}
