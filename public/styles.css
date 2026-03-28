@@ -1,4 +1,4 @@
-body{ 
+body { 
     font-family: Arial, Helvetica, sans-serif;
     background-color: green;
     margin: 0;
@@ -6,100 +6,81 @@ body{
     box-sizing: border-box;
     background-image: url('fundo-campo2.jpg');
 }
-.LOGO{
-    width: 500px;
-    display: inline;
-    
-}
-div header{
+
+/* HEADER */
+.cabecalho {
     background-color: rgb(1, 84, 14);
     color: beige;
     font-weight: bolder;
-    padding: 5px 20px;
     margin: 0;
     padding: 0;
-    position: relative
-}
-.caixa-pesquisa{
-    float: right;
-    padding: 85px 200px;
-    display: inline;
-    position: absolute;
-    
-}
-div aside{
-    float: left;
-    background-color: rgb(1, 84, 14);
-    font-weight: bold;
-    text-align: left;
-    width: 280px;
-    height: 700px;
-    color: beige;
-    font-size: x-large;
-    
-}
-div nav{
-    background-color: yellow;
-}
-div main .titulo{
-    font-size: 30px;
-    text-align: center;
-    margin-left: 650px;
-    margin-right: 400px;
-    color: beige;
-}
-article {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-left: 350px;
-    margin-right: 10px;
-    gap: 20px;
-    color:rgb(1, 84, 14);
-}
-.botao1, .botao2, .botao3 {
-    flex: 1;
-    padding: 20px;
-}
-.botao1{
-    background-color: beige;
-    width: 380px;
-    height: 380px;
-    border-radius: 10%;
-}
-.botao2{
-    background-color: beige;
-    width: 380px;
-    height: 380px;
-    border-radius: 10%;
-}
-.botao3{
-    background-color: beige;
-    width: 380px;
-    height: 380px;
-    border-radius: 10%;
-}
-.icones{
-    width: 200px;
-}
-/* Layout desktop: cards em 3 colunas */
-.cards-horario {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin-left: 280px; /* espaço do menu lateral */
 }
 
-/* Banner */
-.banner {
-    margin-left: 280px;
+.header-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
+
+.LOGO {
+    width: 300px;
+}
+
+.caixa-pesquisa {
+    padding: 0;
+}
+
+.search {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    width: 250px;
+}
+
+/* MENU NAV */
+.menu-nav {
+    background-color: rgb(0, 60, 10);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 12px 0;
+}
+
+.menu-nav a {
+    color: beige;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+.conteudo-principal {
+    padding: 0;
+}
+
+.titulo {
+    font-size: 30px;
+    text-align: center;
+    color: beige;
+    padding: 20px 0;
+}
+
+/* BANNER */
+.banner {
+    margin: 0;
+}
+
 .banner img {
     width: 100%;
-    height: 220px;
+    height: 250px;
     object-fit: cover;
 }
+
 .banner p {
     color: beige;
     text-align: center;
@@ -107,31 +88,80 @@ article {
     padding: 10px;
 }
 
-/* Footer */
+/* CARDS */
+.cards-horario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.botao1, .botao2, .botao3 {
+    background-color: beige;
+    border-radius: 10%;
+    padding: 20px;
+    color: rgb(1, 84, 14);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.icones {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* FORMULARIOS */
+.botao1 form,
+.botao2 form,
+.botao3 form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.botao1 form label,
+.botao2 form label,
+.botao3 form label {
+    font-weight: bold;
+    font-size: small;
+}
+
+.botao1 form input,
+.botao2 form input,
+.botao3 form input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(1, 84, 14);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* FOOTER */
 .rodape {
     background-color: rgb(1, 84, 14);
     color: beige;
     text-align: center;
     padding: 20px;
     clear: both;
+    margin-top: 30px;
 }
+
 .redes-sociais a {
     color: beige;
     margin: 0 10px;
     text-decoration: none;
 }
 
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE — MOBILE */
 @media (max-width: 768px) {
-    .lado {
-        float: none;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 0;
-    }
 
     .cabecalho {
         display: flex;
@@ -139,23 +169,56 @@ article {
         align-items: center;
     }
 
+    .header-topo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .LOGO {
         width: 200px;
     }
 
-    .banner,
-    .cards-horario {
-        margin-left: 0;
+    .search {
+        width: 100%;
+        box-sizing: border-box;
     }
 
-    .cards-horario {
-        grid-template-columns: 1fr; /* uma coluna no mobile */
+    /* MENU OCUPANDO LARGURA TODA NO MOBILE */
+    .menu-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0;
+        width: 100%;
     }
 
-    .caixa-pesquisa {
-        position: static;
-        float: none;
-        padding: 10px;
+    .menu-nav a {
         text-align: center;
+        padding: 12px 0;
+        border-bottom: 1px solid rgb(1, 84, 14);
+        width: 100%;
+        display: block;
+    }
+
+    .banner img {
+        height: 150px;
+    }
+
+    /* CARDS EM COLUNA ÚNICA SEM CORTE */
+    .cards-horario {
+        grid-template-columns: 1fr;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .botao1, .botao2, .botao3 {
+        width: 100%;
+        border-radius: 5%;
+        box-sizing: border-box;
     }
 }

@@ -1,76 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Campo Comunitario</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div>
         <header class="cabecalho">
-            <img src="LOGO.PNG" class="LOGO" alt="logo">
-            <div class="caixa-pesquisa">
-                <input type="search" placeholder="CAIXA DE PESQUISA" class="search">
-            </div>
-        </header>
-        
-        <aside class="lado">
-            <ul>
-                <li>ENTRE EM CONTATO</li>
-                <br>
-                <li>SEJA UM VOLUNTARIO</li>
-                <br>
-                <li>CONHEÇA O PROJETO</li>
-                <br>
-                <li>DOAÇÕES</li>
-            </ul>
-        </aside>
-        <main class="feed">
-            <div class="titulo">
-                <h2> RESERVE AQUI SEU HORARIO</h2>
-            </div>
-            <article class="quadros">
-                <div class="botao1">
-                    <h3>HORARIOS COM VAGAS</h3>
-                    <p> Aqui voce pode entrar em algum time para completar</p>
-                    <input type="date" id="data" name="data">
-                    <input type="submit" name="Enviar">
-                    <img  src="horario-vagas.png" class="icones" alt="horario-vagas">
-                    <br>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            <div class="header-topo">
+                <img src="LOGO.PNG" class="LOGO" alt="logo">
+                <div class="caixa-pesquisa">
+                    <input type="search" placeholder="CAIXA DE PESQUISA" class="search">
                 </div>
-                <div class="botao2">
+            </div>
+            <nav class="menu-nav">
+                <a href="#reserva">ENTRE EM CONTATO</a>
+                <a href="#voluntario">SEJA UM VOLUNTARIO</a>
+                <a href="#projeto">CONHEÇA O PROJETO</a>
+                <a href="#doacoes">DOAÇÕES</a>
+            </nav>
+        </header>
+
+        <main class="conteudo-principal">
+
+            <section class="banner">
+                <img src="fundo-campo2.jpg" alt="banner campo">
+                <p>Bem-vindo ao Campo Comunitário! Reserve seu horário e venha jogar.</p>
+            </section>
+
+            <div class="titulo">
+                <h2>RESERVE AQUI SEU HORARIO</h2>
+            </div>
+
+            <section id="reserva" class="cards-horario">
+                <article class="botao1">
+                    <h3>HORARIOS COM VAGAS</h3>
+                    <p>Aqui voce pode entrar em algum time para completar</p>
+                    <img src="horario-vagas.png" class="icones" alt="horario-vagas">
+                    <form action="#" method="post">
+                        <label for="nome1">Nome:</label>
+                        <input type="text" id="nome1" name="nome" placeholder="Seu nome" required>
+                        <label for="data1">Data:</label>
+                        <input type="date" id="data1" name="data">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </article>
+
+                <article class="botao2">
                     <h3>HORARIOS AGENDADOS</h3>
                     <p>Aqui voce pode consultar seu horario agendado</p>
-                    <input type="date" id="data" name="data">
-                    <input type="submit" name="Enviar">
-                    <img  src="horario-agendado.png" class="icones" alt="horario-agendado">
-                    <br>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                </div>
-                <div class="botao3">
+                    <img src="horario-agendado.png" class="icones" alt="horario-agendado">
+                    <form action="#" method="post">
+                        <label for="nome2">Nome:</label>
+                        <input type="text" id="nome2" name="nome" placeholder="Seu nome" required>
+                        <label for="data2">Data:</label>
+                        <input type="date" id="data2" name="data">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </article>
+
+                <article class="botao3">
                     <h3>HORARIOS LIVRES</h3>
-                    <P>Aqui voce pode marcar um horario para jogar com seu time, ou para pessoas completarem</P>
-                    <input type="date" id="data" name="data">
-                    <input type="submit" name="Enviar">
-                    <img  src="horario-livre.png" class="icones" alt="horario-livre">
-                    <br>
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                </div>
-            </article>
+                    <p>Aqui voce pode marcar um horario para jogar com seu time, ou para pessoas completarem</p>
+                    <img src="horario-livre.png" class="icones" alt="horario-livre">
+                    <form action="#" method="post">
+                        <label for="nome3">Nome:</label>
+                        <input type="text" id="nome3" name="nome" placeholder="Seu nome" required>
+                        <label for="data3">Data:</label>
+                        <input type="date" id="data3" name="data">
+                        <label for="horario3">Horário:</label>
+                        <input type="time" id="horario3" name="horario">
+                        <input type="submit" value="Agendar">
+                    </form>
+                </article>
+            </section>
+
         </main>
+
         <footer class="rodape">
-    <p>Campo Comunitário &copy; 2025</p>
-    <nav class="redes-sociais">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">WhatsApp</a>
-    </nav>
-</footer>
+            <p>Campo Comunitário &copy; 2025</p>
+            <nav class="redes-sociais">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">WhatsApp</a>
+            </nav>
+        </footer>
     </div>
 </body>
 </html>
